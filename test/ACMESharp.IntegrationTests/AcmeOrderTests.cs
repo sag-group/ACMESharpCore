@@ -204,7 +204,7 @@ namespace ACMESharp.IntegrationTests
                 }
                 else
                 {
-                    var dnsVal = x.AllRecords?.FirstOrDefault()?.RecordToString().Trim('"');
+                    var dnsVal = x.AllRecords?.FirstOrDefault()?.ToString().Trim('"');
 
                     if (!string.IsNullOrEmpty(dnsVal))
                     {
